@@ -149,12 +149,12 @@ async function checkPostLimits(posts) {
 
                 for (let i = 0; i < video.length - 2; ++i)
                     if (now - video[i].created_utc < day && video[i].created_utc - video[i + 2].created_utc < week)
-                        p.push(overLimit(video[i], "2 video posts/week"))
+                        p.push(overLimit(video[i], "2 video posts/week", new Date((video[i + 2].created_utc + week) * 1000).toUTCString()))
 
                 for (let i = 0; i < community.length - 2; ++i)
                     if (now - community[i].created_utc < day
                         && community[i].created_utc - community[i + 2].created_utc < week)
-                        p.push(overLimit(community[i], "2 community content posts/week"))
+                        p.push(overLimit(community[i], "2 community content posts/week", new Date((community[i + 2].created_utc + week) * 1000).toUTCString()))
 
                 for (let i = 0; i < hourly.length - 2; ++i)
                     if (now - hourly[i].created_utc < day && hourly[i].created_utc - hourly[i + 2].created_utc < hour)

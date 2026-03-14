@@ -270,8 +270,12 @@ export const versionList = [
         date: "8/27/2025"
     }, {
         name: "breach",
-        version: 6.06,
+        version: 6.10,
         date: "10/22/2025"
+    }, {
+        name: "remnant",
+        version: 6.20 ,
+        date: "2/12/2026"
     }
 ];
 
