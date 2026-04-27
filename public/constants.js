@@ -276,6 +276,10 @@ export const versionList = [
         name: "remnant",
         version: 6.20 ,
         date: "2/12/2026"
+    }, {
+        name: "xeno arena",
+        version: 6.30 ,
+        date: "4/8/2026"
     }
 ];
 
