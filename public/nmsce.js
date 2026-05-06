@@ -5507,6 +5507,7 @@ function getPlanet(evt) {
 
             if (e["Planet-Name"] && e["Planet-Name"] !== "") {
                 $("[id='id-Planet-Name']").val(e["Planet-Name"])
+                $("[id='id-Planet-Biome']").val(e["Planet-Biome"])
                 $("[id='row-Planet-Name'] .bx-check").show()
                 nmsce.restoreImageText(null, true)
             }
@@ -6117,10 +6118,9 @@ const objectList = [{
         ttip: planetNumTip,
         imgUpdate: true,
     }, {
-        name: "Biome",
+        name: "Planet Biome",
         type: "menu",
         list: biomeList,
-        onchange: getPlanet,
         imgText: true,
         search: true,
     }, {

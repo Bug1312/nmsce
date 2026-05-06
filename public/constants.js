@@ -2096,7 +2096,8 @@ export const faunaList = [
     { name: "Wraith / snake, flying" },
     { name: "Protoflyer" },
     { name: "Butterfly" },
-    { name: "Worm, imortal giant" }
+    { name: "Worm, imortal giant" },
+    { name: "Archive, robot" }
 ]
 
 export const faunaProductKilled = [{
@@ -2373,6 +2374,8 @@ export const biomeList = [{
     name: 'Mega Exotic',
 }, {
     name: 'Scorched',
+}, {
+    name: 'Swamp',
 }, {
     name: 'Frozen',
 }, {
