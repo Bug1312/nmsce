@@ -300,7 +300,7 @@ async function checkTitle(posts) {
                 .catch(err => { error(err, "edu"); error = true })
 
             if (!error && userPosts.length < 5)
-                first = "Thank you for posting to NMSCE and taking an active part in the community!  \n\nSince this is one of your first few posts to NMSCE please read [this post](https://www.reddit.com/r/NMSCoordinateExchange/comments/1c0l1a4/how_to_create_helpful_starship_post_titles_and/) about what to include in your post to help people find your discovery.  \n  \n"
+                first = "Thank you for posting to NMSCE and taking an active part in the community!  \n\nSince this is one of your first few posts to NMSCE please read [this post](https://www.reddit.com/r/NMSCoordinateExchange/comments/1c0l1a4/how_to_create_helpful_starship_post_titles_and/) about what to include in your post to help people find your discovery.  Also, please make sure you are using the correct flair for your post. Everything in the sub is based on the flair. Using the wrong flair causes you to get the wrong comments made to your post instead of something helpful.  \n  \n"
 
             let title = post.title.toLowerCase() + " " + post.selftext.toLowerCase()
             text = "Some info about this post:  \n"
