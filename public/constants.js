@@ -276,6 +276,10 @@ export const versionList = [
         name: "remnant",
         version: 6.20 ,
         date: "2/12/2026"
+    }, {
+        name: "xeno arena",
+        version: 6.30 ,
+        date: "4/8/2026"
     }
 ];
 
@@ -2092,7 +2096,8 @@ export const faunaList = [
     { name: "Wraith / snake, flying" },
     { name: "Protoflyer" },
     { name: "Butterfly" },
-    { name: "Worm, imortal giant" }
+    { name: "Worm, imortal giant" },
+    { name: "Archive, robot" }
 ]
 
 export const faunaProductKilled = [{
@@ -2369,6 +2374,8 @@ export const biomeList = [{
     name: 'Mega Exotic',
 }, {
     name: 'Scorched',
+}, {
+    name: 'Swamp',
 }, {
     name: 'Frozen',
 }, {

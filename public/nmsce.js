@@ -142,6 +142,7 @@ $(document).ready(() => {
 })
 
 const planetNumTip = `This is the first glyph in the portal address. Assigned to each celestial body according to their aphelion.`
+const faunaCombatTip = `Xeno Arena added pet combat.`
 
 let nav = `
     <a id="tab-idname" class="nav-item nav-link txt-def h6 rounded-top active" style="border-color:black;" 
@@ -5506,6 +5507,7 @@ function getPlanet(evt) {
 
             if (e["Planet-Name"] && e["Planet-Name"] !== "") {
                 $("[id='id-Planet-Name']").val(e["Planet-Name"])
+                $("[id='id-Planet-Biome']").val(e["Planet-Biome"])
                 $("[id='row-Planet-Name'] .bx-check").show()
                 nmsce.restoreImageText(null, true)
             }
@@ -6055,6 +6057,35 @@ const objectList = [{
         list: faunaList,
         search: true,
     }, {
+        name: "Overall Combat",
+        type: "radio",
+        list: classList,
+        // ttipFld: "classTtip",
+        ttip: faunaCombatTip,
+        imgText: true,
+        search: true,
+    }, {
+        name: "Effectiveness",
+        type: "radio",
+        list: classList,
+        // ttipFld: "classTtip",
+        imgText: true,
+        search: true,
+    }, {
+        name: "Agility",
+        type: "radio",
+        list: classList,
+        // ttipFld: "classTtip",
+        imgText: true,
+        search: true,
+    }, {
+        name: "Health",
+        type: "radio",
+        list: classList,
+        // ttipFld: "classTtip",
+        imgText: true,
+        search: true,
+    }, {
         name: "Tamed Product",
         type: "menu",
         list: faunaProductTamed,
@@ -6086,6 +6117,12 @@ const objectList = [{
         onchange: getPlanet,
         ttip: planetNumTip,
         imgUpdate: true,
+    }, {
+        name: "Planet Biome",
+        type: "menu",
+        list: biomeList,
+        imgText: true,
+        search: true,
     }, {
         name: "Photo",
         type: "img",
